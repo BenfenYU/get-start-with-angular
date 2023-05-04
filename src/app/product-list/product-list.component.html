@@ -11,6 +11,7 @@
 
   <button type="button" (click)="share()">Share</button>
 
+  <!-- 下面使用了新定义的控件，[] 对应子控件的输入属性，() 对应了子空间的输出属性 -->
   <app-product-alerts
     [product]="product"
     (notify)="onNotify()"
